@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunrise Hotel&Spa le brinda la posibilidad de poder reservar y abonar su estadía desde la comodidad de su casa, para que en sus vacaciones o viaje de negocios su única preocupación sea la de disfrutar. Contamos con diferentes medios de pagos y un sistema de protección de datos para que su pago se realice con todas las garantías.">
+    <meta name="keywords" content="Hotel&Spa Sunrise, reservas, reservas online, formulario de contacto, medios de pagos">
+    <title>Reservas e información</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fondo-gradiente top form">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#inicio">
+                  <img src="../media/logo/Free_Sample_By_Wix.jpeg" alt="logotipo" class="logo">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="inicio">
+                  <li class="nav-item item">
+                    <a class="nav-link active hover" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hover" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="servicios.html#masajes">Masajes</a></li>
+                      <li><a class="dropdown-item" href="servicios.html#dia-de-spa">Día de Spa</a></li>
+                      <li><a class="dropdown-item" href="servicios.html#cabalgatas">Cabalgatas guíadas</a></li>
+                    </ul><!--Agregar ids a servicios!!!-->
+                  </li>
+                  <li class="nav-item item">
+                    <a class="nav-link hover" href="galeria.html">Galería</a>
+                  </li>
+                  <li class="nav-item item">
+                    <a class="nav-link hover" href="gastronomia.html">Gastronomía</a>
+                  </li>
+                  <li class="nav-item item">
+                    <a class="nav-link hover" href="contacto.html">Contacto</a>
+                  </li>                
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- FIN DEL NAV -->
+    </header>
+<main class="form-contacto">
+    <h1 class="h1 text-center d-block yellow">Reserva online</h1>
+    <div class="container-sm">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h2 class="display-6 text-center ">Registro</h2>
+                <div class="datos-fecha">
+                  <div>
+                    <label for="fecha" class="fecha">Check in</label>
+                    <input type="date" name="fecha"class="date">
+                  </div>
+                  <div>
+                    <label for="fecha" class="fecha">Check out</label>
+                    <input type="date" name="fecha" class="date">
+                 </div>
+                </div>
+                <!--datos personales-->
+                <h2 class="display-6 text-center capitalize">Datos personales</h2>
+                <div class="datos">
+                  <input type="text" class="nombre" placeholder="Ingresa tu nombre">
+                  <input type="text" class="nombre" placeholder="Ingresa tu apellido">
+                  <input type="email" class="email" placeholder="correoEjemplo@hotmail.com">
+                </div>
+                <!--cantidad de personas-->
+                <div class="personas">
+                  <input type="number" class="number">
+                  <label for="number" class="numb">Cantidad de adultos</label>
+                  <input type="number" class="number">
+                  <label for="number" class="numb">Cantidad de niños</label>
+                </div>
+              </div> <!--Datos Personales-->
+
+
+              <div class="col-6">
+                <h2 class="display-6 text-center">Pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de débito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nombre del titular</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Debe ingrear el nombre completo escrito en la tarjeta</small>
+            </div>
+              
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número de la tarjeta de crédito</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            </div>
+              
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expira</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            </div>
+              
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Código de seguridad requeerido
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar los datos</button>
+      </div>
+    </div>
+              </div>
+            </div>
+          </div>
+  </main>
+  <footer>
+    <ul class="izquierda">
+        <li>Terminos y condiciones de uso</li>
+        <li>Reservar ahora</li>
+        <li>Como llegar</li>
+        <li>Hotel Sunrise - Ruta 10, Rambla de los Argentinos 19.500</li>
+    </ul>
+    <div class="redes"> 
+        <h5>Siguenos en nuestras redes sociales</h5>
+        <div">
+            <span><a class="fb" href="#"><i class="fab fa-facebook-square"></i></a></span>
+            <span><a class="ins" href="#"><i class="fab fa-instagram-square"></i></a></span>
+            <span><a class="tw"href="#"><i class="fab fa-twitter-square"></i></a></span>
+        </div>
+    </div>
+    <div class="reservas">Por reservas desde Argentina nuestro número gratuito es xxx- xxxxxxxx</div>        
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

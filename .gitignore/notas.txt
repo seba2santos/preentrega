@@ -1,0 +1,2 @@
+Para este desafio agregue en cada página una descripción y palabras claves diferentes acordes a cada sección, ordené la semántica de la estructura html, y modifiqué los títulos de cada página en el head para que concordara con el contenido.
+También me preocupé de agregar al menos una palabra clave en cada h1. 

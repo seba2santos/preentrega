@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    background-color: #e1eef2;
+}
+/* Estilos del header */
+.fondo-gradiente {
+    background: linear-gradient(rgba(3, 3, 3, 0.75), rgba(3,3,3, 0.75));
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.nav-link {
+    color: #fff !important;
+}
+.hover:hover{
+    color: rgba(255, 255, 255, 0.466)!important;
+}
+.logo {
+    width: 70%;
+}
+header button {
+    margin-left: 1.7%;
+    color: #fff;
+}
+.navbar-toggler {
+    border-color:rgba(230, 230, 250, 0.698) !important;
+}
+.item {
+    padding:0 3px 3px 0;
+    margin-right: 2em;
+}
+.dropdown {
+    padding:0 3px 3px 0;
+    margin-right: 1em; 
+}
+
+.derecha {
+    height: 30vh !important;
+    position: absolute;
+    right: 0%;
+    top: 35%; /*Corregir para otros dispositivos*/
+}
+
+/* Estilos del main */
+.iconos {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    line-height: 0;
+    background-color: #fff;
+
+}
+.fb {
+    color: hsl(221, 40%, 47%);
+    padding: 0;
+    font-size: 1.5em;
+    height: max-content;
+}
+.ins {
+    color: #b93891;
+    font-size: 1.25em;
+}
+.ins:hover {
+    color: #b93891;
+}
+.tw {
+    color: #1d9ceb;
+    font-size: 1.25em;
+}
+.tw:hover {
+    color: #1d9ceb;
+}
+.iconos div {
+    transition: scale();
+
+}
+.iconos div:hover {
+     transform: scale(1.2, 1.2);
+}
+.top {
+    position: fixed;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #014073;
+    margin: 2%;
+    text-align: center;
+}
+main .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150vh;
+    grid-column-gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+}
+.img img {
+    width: 90%;
+    height: 100vh;
+    margin-left: 5%;
+}
+.img .parrafoImg {
+    width: 90%;
+    margin-left: 5%;
+}
+
+main .promociones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.promociones h3 {
+    font-size: 2em;
+    grid-area: 1 / 1 / 1 / 5;
+    margin-bottom: 5%;
+    color: #EBE22D;
+}
+main h4 {
+    text-align: center;
+    color: #EBE22D;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+main div p {
+    text-align: center;
+}
+
+
+/*Footer*/
+footer {
+    display: flex;
+    background-color: #385B80;
+    text-align: center;
+    margin-top: 6em;
+    padding: 4em;
+    align-items: baseline;
+}
+footer .izquierda {
+    font-size: 1.2em;
+    list-style: none;
+    color: rgba(230, 230, 250, 0.698);
+}
+footer .redes {
+    padding: 2%;
+    padding-bottom: 3%;
+    color: rgba(230, 230, 250, 0.698);
+}
+footer h5 {
+    font-size: 1.2em;
+}
+footer .fb {
+    font-size: 1.3em;
+}
+footer .fb:hover {
+    color: hsl(221, 40%, 47%);
+}
+.redes div {
+    display: flex;
+}
+.redes span {
+    font-size: 3em;
+    background-color: #fff;
+    margin: 0 2% 2% 0;
+    border-radius: 100% 100% 0 0;
+}
+footer a {
+    text-decoration: none;
+}
+.reservas {
+    color: rgba(230, 230, 250, 0.698);
+    font-size: 1.2em;
+}
+/*Servicios*/
+/*titulo*/
+.servicios .titulo {
+    width: 90%;
+    margin: 3%;
+}
+.servicios .titulo h1 {
+    font-size: 2.5em;
+    color: #014073;
+    margin-bottom: 2%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.titulo p {
+    font-size: 1em;
+    color: #8580d6;
+    text-align: center;
+}
+/*servicios divs*/
+.servicios .descripcionServicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.servicios .spa, .masajes, .cabalgatas {
+    width: 33%;
+}
+.servicios .descripcionServicios h3 {
+    font-size: 1.5em;
+    color: #EBE22D;
+    margin-bottom: 2%;
+    text-align: flex-start;
+    text-align: center;
+    
+}
+.descripcionServicios img {
+    width: 100%;
+}
+.descripcionServicios img:hover {
+    transform: scaleY(1.1);
+}
+.descripcionServicios .descriptivo {
+    color: #8580d6;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 90%;
+    text-align: center;
+}
+/*Galería*/
+
+.galeria {
+    background-color: #e1eef2;
+    text-align: center;
+    padding: 10px;
+}
+.galeria h1 {
+    font-size: 2.5em;
+    color: #014073;
+    text-align: center;
+    padding: 1.5%;
+    margin-bottom: 4%;
+    text-transform: capitalize;
+}
+
+.galeria img {
+    width: 33%;
+    height: 50vh;
+    margin: 5px;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(135, 207, 235, 0.178);
+}
+section .imgSeccion {
+    margin: 20px;
+    width: 100%;
+    height: 70vh;
+}
+section .div {
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+section div p {
+    font-size: 22px;
+    line-height: 35px;
+    color:rgba(105, 90, 205, 0.767);
+    word-spacing: 3px;
+}
+.dos {
+    border-bottom: 3px solid;
+    padding-bottom: 30px;
+}
+/*gastronomía*/
+
+.fondoCopa .container {
+    background-image: url(../media/restaurant/red-wine.jpg);
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+.container h1 {
+    text-align: center;
+    color: rgb(88, 67, 55);
+    margin-bottom: 3%;
+    padding-top: 5%;
+}
+.container p {
+    width: 65%;
+    font-size: 20px;
+    line-height: 56px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.466);
+    margin: auto;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.platos {
+    display:grid;
+    margin: auto;
+    background-color: rgb(59, 51, 51);
+    
+}
+.platos img {
+    width: 100%;
+}
+.horarios {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%
+}
+.horarios img {
+    height: 100vh;
+}
+.horarios p {
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 1em;
+    letter-spacing: 5px;
+    line-height: 1.8em;
+    padding-left: 5%;
+}
+/*Formulario*/
+.form-contacto {
+    background-image: url(../media/hotel/hotel-bell.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+.form {
+    position: static;
+}
+.yellow{
+    color: #EBE22D;
+    padding: 3%;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.datos-fecha {
+    display: flex;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+.fecha {
+    width: 40%;
+    font-weight:bold;
+}
+.date {
+    width: 55%;
+}
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nombre {
+    width: 49.5%;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+.email {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+.personas {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.number {
+    width: 10%;
+}
+.numb {
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+}
+
+
+
+@media (max-width: 600px){
+    .fondo-gradiente{
+        position: relative !important;
+        height: 20vh;
+        background-color: #014073 ;
+    }
+    .logo {
+        width: 40%;
+    }
+
+}
+
